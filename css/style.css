@@ -109,111 +109,81 @@ section p {
 
 /* メニューページのスタイル */
 .menu-section {
-  padding: 50px 20px;
+  max-width: 800px;
+  margin: 120px auto 60px;
+  padding: 0 20px;
 }
 
 .menu-category {
-  margin: 60px auto;
-  max-width: 900px;
+  margin-bottom: 100px;
 }
 
 .menu-category h2 {
-  font-size: 1.8rem;
+  font-size: 28px;
   font-weight: 300;
   letter-spacing: 1px;
-  margin-bottom: 1rem;
-  position: relative;
+  margin-bottom: 10px;
   display: inline-block;
-}
-
-.menu-category h2::after {
-  content: '';
-  position: absolute;
-  width: 40px;
-  height: 1px;
-  background-color: #333;
-  bottom: -5px;
-  left: 0;
 }
 
 .menu-time {
   color: #666;
-  font-size: 0.9rem;
-  margin: 1rem 0;
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 
 .menu-description {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.8;
   margin: 1.5rem 0;
   color: #555;
 }
 
-.menu-course {
-  margin: 2rem 0;
-}
-
 .menu-price {
-  font-size: 2rem;
+  font-size: 24px;
   color: #333;
-  font-weight: 300;
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
+}
+
+.course-detail {
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.course-detail h3 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
   letter-spacing: 1px;
-}
-
-.course-flow {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.course-item {
-  padding: 0.8rem 1.5rem;
-  font-size: 0.95rem;
+  margin: 30px 0 15px;
   color: #333;
-  background: none;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  transition: all 0.3s ease;
 }
 
-.course-item:hover {
-  background-color: #333;
-  color: #fff;
-  border-color: #333;
-}
-
-.course-arrow {
-  color: #999;
-  font-size: 0.9rem;
+.course-detail p {
+  font-size: 15px;
+  color: #666;
+  margin: 8px 0;
+  font-style: italic;
 }
 
 .course-includes {
+  font-size: 14px;
   color: #666;
-  font-size: 0.9rem;
-  margin-top: 2rem;
-  padding-top: 1rem;
+  margin: 30px 0;
+  padding-top: 20px;
   border-top: 1px solid #eee;
 }
 
 .menu-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
 }
 
 .menu-images img {
   width: 100%;
   height: auto;
-  opacity: 0.95;
-  transition: opacity 0.3s ease;
-}
-
-.menu-images img:hover {
-  opacity: 1;
 }
 
 /* accessページのスタイル */
@@ -296,37 +266,29 @@ section p {
     height: 300px;
   }
 
+  .menu-section {
+    margin-top: 80px;
+    padding: 0 15px;
+  }
+
+  .menu-category {
+    margin-bottom: 60px;
+  }
+
+  .course-detail {
+    padding: 0;
+  }
+
+  .menu-images {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .map-container {
     padding: 0 10px;
   }
   
   .map-container iframe {
     height: 300px;
-  }
-
-  .menu-category {
-    margin: 40px auto;
-  }
-
-  .menu-course {
-    margin: 30px 10px;
-    padding: 20px;
-  }
-
-  .course-flow {
-    gap: 10px;
-  }
-
-  .course-item {
-    padding: 8px 15px;
-    font-size: 0.9rem;
-  }
-
-  .course-arrow {
-    transform: rotate(90deg);
-  }
-
-  .menu-images {
-    grid-template-columns: 1fr;
   }
 }
