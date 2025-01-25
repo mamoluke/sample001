@@ -127,6 +127,55 @@ section p {
   color: #333;
 }
 
+/* メニューコースのスタイル */
+.menu-course {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.menu-price {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-family: "Playfair Display", serif;
+}
+
+.course-flow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.course-item {
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.course-arrow {
+  color: #888;
+  font-family: serif;
+}
+
+.course-includes {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
 .menu-images {
   display: flex;
   gap: 30px;
@@ -174,6 +223,24 @@ section p {
 
   .menu-category {
     margin: 40px auto;
+  }
+
+  .menu-course {
+    margin: 30px 10px;
+    padding: 20px;
+  }
+
+  .course-flow {
+    gap: 10px;
+  }
+
+  .course-item {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .course-arrow {
+    font-size: 0.8rem;
   }
   
   .menu-images {
