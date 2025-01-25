@@ -74,12 +74,12 @@ section p {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+  opacity: 0; /* 初期は非表示 */
   transition: opacity 1s ease-in-out;
 }
 
-.slide.active {
-  opacity: 1;
+.slide:first-child {
+  opacity: 1; /* 初期表示の画像 */
 }
 
 /* モバイル対応 */
