@@ -95,7 +95,50 @@ section p {
 .map-container iframe {
   width: 100%;
   height: 450px;
-  border: none;  /* 輪郭を削除 */
+  border: none;
+}
+
+/* メニューページのスタイル */
+.menu-section {
+  padding: 50px 20px;
+}
+
+.menu-category {
+  margin: 60px auto;
+  max-width: 900px;
+}
+
+.menu-category h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.menu-time {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.menu-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.menu-images {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-images img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* モバイル対応 */
@@ -127,5 +170,17 @@ section p {
   
   .map-container iframe {
     height: 300px;
+  }
+
+  .menu-category {
+    margin: 40px auto;
+  }
+  
+  .menu-images {
+    gap: 20px;
+  }
+  
+  .menu-images img {
+    width: 100%;
   }
 }
