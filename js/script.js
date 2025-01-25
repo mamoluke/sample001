@@ -4,10 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showSlide(index) {
     slides.forEach((slide, i) => {
-      slide.classList.remove("active");
-      if (i === index) {
-        slide.classList.add("active");
-      }
+      slide.style.opacity = i === index ? "1" : "0";
     });
   }
 
@@ -18,5 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 初期化
   showSlide(currentIndex);
-  setInterval(nextSlide, 3000); // 3秒ごとにスライドを切り替える
+
+  // 3秒ごとにスライドを切り替え
+  setInterval(nextSlide, 3000);
 });
