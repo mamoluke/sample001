@@ -1,187 +1,82 @@
-body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  color: #333;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メニュー</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="access.html">Access</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Menu</h1>
+      <p>Discover our exquisite dishes crafted with the finest ingredients.</p>
+    </section>
 
-header {
-  background-color: #fff;
-  padding: 1rem;
-  border-bottom: 1px solid #eee;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
+    <section class="menu-section">
+      <div class="menu-category">
+        <h2>Lunch Menu</h2>
+        <p class="menu-time">営業時間 11:30 - 14:00 (L.O. 13:30)</p>
+        <p class="menu-description">季節の食材を活かした本格フレンチのランチコース。シェフ厳選の旬の味わいをカジュアルにお楽しみいただけます。</p>
+        <div class="menu-course">
+          <div class="menu-price">¥4,800</div>
+          <div class="course-flow">
+            <div class="course-item">アミューズ</div>
+            <div class="course-arrow">→</div>
+            <div class="course-item">前菜2品</div>
+            <div class="course-arrow">→</div>
+            <div class="course-item">魚料理</div>
+            <div class="course-arrow">→</div>
+            <div class="course-item">肉料理</div>
+            <div class="course-arrow">→</div>
+            <div class="course-item">デザート</div>
+          </div>
+          <div class="course-includes">コーヒー または 紅茶 ／ 自家製パン</div>
+        </div>
+        <div class="menu-images">
+          <img src="images/lunch1.png" alt="ランチコース 前菜" width="400" height="300">
+          <img src="images/lunch2.png" alt="ランチコース メイン" width="400" height="300">
+        </div>
+      </div>
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 0.5rem 0;
-  position: relative;
-}
-
-nav ul li a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #333;
-  transition: width 0.3s ease;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
-}
-
-main {
-  margin-top: 80px;
-  padding: 2rem;
-}
-
-.menu-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-.menu-section h1 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 3rem;
-  letter-spacing: 2px;
-}
-
-.menu-time-lunch, .menu-time-dinner {
-  font-size: 1.2rem;
-  color: #333;
-  margin: 4rem 0 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
-  letter-spacing: 1px;
-}
-
-.menu-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  margin-bottom: 4rem;
-  align-items: start;
-}
-
-.menu-details {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.menu-price {
-  font-size: 2.5rem;
-  color: #333;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
-.course-flow {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.course-item {
-  padding: 1rem 0;
-  font-size: 1rem;
-  color: #333;
-  border-bottom: 1px solid #f5f5f5;
-  transition: padding-left 0.3s ease;
-}
-
-.course-item:hover {
-  padding-left: 1rem;
-  background-color: #f9f9f9;
-}
-
-.course-includes {
-  color: #666;
-  font-size: 0.9rem;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid #eee;
-}
-
-.menu-visual {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-.menu-image {
-  width: 100%;
-  height: auto;
-  opacity: 0.9;
-  transition: opacity 0.3s ease;
-}
-
-.menu-image:hover {
-  opacity: 1;
-}
-
-@media (max-width: 1024px) {
-  .menu-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .menu-visual {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .menu-section {
-    padding: 1rem;
-  }
-
-  .menu-section h1 {
-    font-size: 2rem;
-  }
-
-  .menu-time-lunch, .menu-time-dinner {
-    font-size: 1rem;
-  }
-
-  .menu-price {
-    font-size: 2rem;
-  }
-
-  .menu-visual {
-    grid-template-columns: 1fr;
-  }
-  
-  nav ul {
-    gap: 1rem;
-  }
-
-  nav ul li a {
-    font-size: 0.85rem;
-  }
-}
+      <div class="menu-category">
+        <h2>Dinner Menu</h2>
+        <p class="menu-time">営業時間 17:30 - 22:00 (L.O. 21:00)</p>
+        <p class="menu-description">厳選された食材と伝統的なフランス料理の技法が織りなす、至高のディナーコース。シェフの創造性が光る独創的な一皿をご堪能ください。</p>
+        <div class="menu-course">
+          <div class="menu-price">¥12,000</div>
+          <div class="course-flow">
+            <div class="course-item">アミューズ3品</div>
+            <div class="course-arrow">→</div>
+            <div class="course-item">オードブル</div>
+            <div class="course-arrow">→</div>
+            <div class="course-item">温前菜</div>
+            <div class="course-arrow">→</div>
+            <div class="course-item">魚料理</div>
+            <div class="course-arrow">→</div>
+            <div class="course-item">肉料理</div>
+            <div class="course-arrow">→</div>
+            <div class="course-item">デザート2品</div>
+          </div>
+          <div class="course-includes">小菓子 ／ コーヒー または 紅茶 ／ 自家製パン</div>
+        </div>
+        <div class="menu-images">
+          <img src="images/dinner1.png" alt="ディナーコース 前菜" width="400" height="300">
+          <img src="images/dinner2.png" alt="ディナーコース メイン" width="400" height="300">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
