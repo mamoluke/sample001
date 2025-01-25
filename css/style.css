@@ -52,7 +52,7 @@ section h1 {
 section p {
   font-size: 1rem;
   max-width: 600px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
   color: #666666;
 }
 
@@ -67,7 +67,7 @@ section p {
 .slideshow {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9のアスペクト比 */
+  padding-top: 56.25%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -87,6 +87,21 @@ section p {
 
 .slide.active {
   opacity: 1;
+}
+
+/* 地図コンテナ */
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* モバイル対応 */
@@ -110,5 +125,13 @@ section p {
 
   .slideshow-container {
     padding: 10px;
+  }
+
+  .map-container {
+    padding: 0 10px;
+  }
+  
+  .map-container iframe {
+    height: 350px;
   }
 }
