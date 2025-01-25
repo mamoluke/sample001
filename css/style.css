@@ -56,18 +56,13 @@ section p {
   color: #666666;
 }
 
-/* スライドショーコンテナ */
-.slideshow-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
+/* スライドショー */
 .slideshow {
   position: relative;
   width: 100%;
-  padding-top: 42.25%;
+  max-width: 600px;
+  height: 400px;
+  margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -123,8 +118,8 @@ section p {
     font-size: 0.9rem;
   }
 
-  .slideshow-container {
-    padding: 10px;
+  .slideshow {
+    height: 300px;
   }
 
   .map-container {
@@ -132,6 +127,6 @@ section p {
   }
   
   .map-container iframe {
-    height: 350px;
+    height: 300px;
   }
 }
