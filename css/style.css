@@ -1,21 +1,18 @@
-/* 基本設定 */
+/* 全体の基本設定 */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  color: #333;
+  background-color: #ffffff;
+  color: #333333;
   line-height: 1.6;
 }
 
+/* ヘッダーとナビゲーション */
 header {
-  background-color: #fff;
-  padding: 1rem;
-  border-bottom: 1px solid #eee;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -23,68 +20,62 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin: 0 15px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 0.5rem 0;
-  position: relative;
+  color: #333333;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-nav ul li a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: #333;
-  transition: width 0.3s ease;
+nav ul li a:hover {
+  color: #666666;
 }
 
-nav ul li a:hover::after {
-  width: 100%;
-}
-
-/* メインコンテンツ */
-main {
-  margin-top: 80px;
-}
-
+/* セクションの基本設定 */
 section {
-  padding: 3rem 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 section h1 {
   font-size: 2rem;
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 1rem;
-  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666666;
 }
 
 /* スライドショー */
 .slideshow-container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
 .slideshow {
   position: relative;
   width: 100%;
-  height: 600px;
+  max-width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .slide {
@@ -93,22 +84,37 @@ section h1 {
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  object-fit: cover;
 }
 
 .slide.active {
   opacity: 1;
 }
 
-/* メニューセクション */
+/* 地図コンテナ */
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+/* メニューページのスタイル */
 .menu-section {
-  padding-top: 0;
+  padding: 50px 20px;
 }
 
 .menu-category {
-  margin: 4rem 0;
+  margin: 60px auto;
+  max-width: 900px;
 }
 
 .menu-category h2 {
@@ -210,23 +216,110 @@ section h1 {
   opacity: 1;
 }
 
+/* accessページのスタイル */
+.access-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.access-info {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.access-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.access-info p {
+  margin-bottom: 0.5rem;
+}
+
+/* aboutページのスタイル */
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-content {
+  text-align: left;
+}
+
+.about-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+/* reservationページのスタイル */
+.reservation-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.reservation-form {
+  text-align: left;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* モバイル対応 */
 @media (max-width: 768px) {
   nav ul {
-    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
-  nav ul li a {
-    font-size: 0.85rem;
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  section h1 {
+    font-size: 1.8rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
+  }
+
+  .slideshow {
+    height: 300px;
+  }
+
+  .map-container {
+    padding: 0 10px;
+  }
+  
+  .map-container iframe {
+    height: 300px;
   }
 
   .menu-category {
-    margin: 3rem 0;
-    padding: 0 1rem;
+    margin: 40px auto;
+  }
+
+  .menu-course {
+    margin: 30px 10px;
+    padding: 20px;
   }
 
   .course-flow {
-    flex-direction: column;
+    gap: 10px;
+  }
+
+  .course-item {
+    padding: 8px 15px;
+    font-size: 0.9rem;
   }
 
   .course-arrow {
@@ -235,9 +328,5 @@ section h1 {
 
   .menu-images {
     grid-template-columns: 1fr;
-  }
-
-  .slideshow {
-    height: 400px;
   }
 }
