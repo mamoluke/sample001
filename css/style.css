@@ -51,9 +51,11 @@ section h1 {
 
 section p {
   font-size: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto; /* 水平方向の中央揃え */
+  padding: 0; /* 不要なパディングをリセット */
+  max-width: 600px; /* テキストの幅を制限 */
   color: #666666;
+  text-align: center; /* 確実に中央揃え */
 }
 
 /* メニューページのスタイル */
@@ -96,7 +98,8 @@ section p {
 }
 
 .course-detail {
-  margin: 20px 0;
+  margin: 40px 0;
+  text-align: center;
 }
 
 .course-detail h3 {
@@ -110,8 +113,11 @@ section p {
 .course-detail p {
   font-size: 15px;
   color: #666;
-  margin: 8px 0;
-  font-style: italic;
+  margin: 8px auto; /* 水平方向中央揃え */
+  padding: 0; /* 不要なパディングを削除 */
+  max-width: 600px; /* 幅を制限 */
+  text-align: center; /* 確実に中央揃え */
+  line-height: 1.8; /* 読みやすさを向上 */
 }
 
 .course-includes {
