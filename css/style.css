@@ -254,7 +254,7 @@ section p {
 
 .image-item {
   width: 300px; /* 画像とテキストの幅 */
-  text-align: left; /* テキストを左揃え */
+  text-align: left; /* 全体を左揃え */
   margin-bottom: 30px; /* 各アイテム間のスペース */
 }
 
@@ -283,14 +283,15 @@ section p {
   margin-bottom: 10px;
   color: #333; /* 見出しの文字色 */
   font-weight: bold;
+  text-align: left; /* 見出しを左寄せ */
 }
 
 .text-content p {
   font-size: 14px;
   line-height: 1.6;
   color: #555; /* 本文の文字色 */
+  text-align: left; /* 本文を左寄せ */
 }
-
 
 /* reservationページのスタイル */
 .reservation-section {
