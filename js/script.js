@@ -42,4 +42,16 @@ document.addEventListener("DOMContentLoaded", () => {
       hoverContent.style.visibility = "hidden";
     });
   });
+
+  // スクロール時にヘッダーのスタイルを変更
+  const header = document.querySelector("header");
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.style.backgroundColor = "#ffffff"; // 背景色を白に
+      header.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)"; // 軽い影を追加
+    } else {
+      header.style.backgroundColor = "transparent"; // 背景を透明に
+      header.style.boxShadow = "none"; // 影を削除
+    }
+  });
 });
