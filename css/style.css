@@ -336,7 +336,7 @@ section p {
 /* Reservationセクション */
 .reservation {
   padding: 40px 20px;
-  text-align: center;
+  text-align: center; /* 全体を中央揃え */
 }
 
 .reservation h1 {
@@ -349,14 +349,18 @@ section p {
   margin-bottom: 30px;
 }
 
+/* Contact情報のスタイル */
 .contact-info {
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto; /* 自動で中央揃え */
+  max-width: 600px; /* テキスト幅を制限 */
+  text-align: left; /* テキストを左揃え */
 }
 
 .contact-info h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: #333;
+  text-align: center; /* 見出しを中央揃え */
 }
 
 .contact-info p {
@@ -374,16 +378,18 @@ section p {
   color: #0056b3; /* ホバー時のリンク色 */
 }
 
+/* Reservation Policyのスタイル */
 .reservation-policy {
-  text-align: left; /* ポリシーは左揃え */
-  margin: 0 auto;
+  margin: 0 auto; /* 自動で中央揃え */
   max-width: 600px; /* テキスト幅を制限 */
+  text-align: left; /* テキストを左揃え */
 }
 
 .reservation-policy h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: #333;
+  text-align: center; /* 見出しを中央揃え */
 }
 
 .reservation-policy ul {
@@ -395,6 +401,7 @@ section p {
   font-size: 1rem;
   margin-bottom: 10px;
 }
+
 
 
 /* モバイル対応 */
