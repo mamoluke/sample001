@@ -119,61 +119,35 @@ section p {
 }
 
 .menu-category h2 {
-  font-size: 28px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.menu-time {
-  color: #666;
-  font-size: 18px;
-  margin: 30px 0;
   text-align: center;
-  letter-spacing: 0.5px;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
 }
 
-.menu-description {
-  font-size: 16px;
-  line-height: 1.8;
-  margin: 1.5rem 0;
-  color: #555;
-}
-
-.menu-price {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 40px;
+.menu-category {
+  text-align: center;
 }
 
 .course-detail {
-  margin: 40px 0;
-  padding: 0 20px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 600px;
 }
 
 .course-detail h3 {
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 30px 0 15px;
-  color: #333;
+  text-align: center;
+  margin: 30px auto 15px;
 }
 
 .course-detail p {
-  font-size: 15px;
-  color: #666;
-  margin: 8px 0;
-  font-style: italic;
+  text-align: center;
+  margin: 8px auto;
 }
 
 .course-includes {
-  font-size: 14px;
-  color: #666;
-  margin: 30px 0;
-  padding-top: 20px;
-  border-top: 1px solid #eee;
+  text-align: center;
+  margin: 30px auto;
 }
 
 .menu-images {
