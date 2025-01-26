@@ -347,6 +347,11 @@ section p {
 /* Reservationセクション */
 .reservation {
   padding: 40px 20px;
+  /* text-align: centerを削除 */
+}
+
+.reservation h1,
+.reservation > p {
   text-align: center;
 }
 
