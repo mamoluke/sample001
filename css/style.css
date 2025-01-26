@@ -29,17 +29,28 @@ footer {
   z-index: 1000; /* 他の要素より前面に表示 */
 }
 
+/* フッター全体のスタイル */
+footer {
+  background-color: #f8f8f8; /* 背景色 */
+  padding: 20px 0; /* 上下の余白 */
+  text-align: center; /* 全体を中央揃え */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+  position: fixed; /* 画面下部に固定 */
+  bottom: 0; /* 下端に配置 */
+  width: 100%; /* 横幅を全体に広げる */
+  z-index: 1000; /* 他の要素より前面に */
+}
+
 /* ソーシャルリンクのスタイル */
 footer .social-links {
   display: flex;
-  justify-content: flex-end; /* アイコンを右揃え */
-  gap: 20px; /* アイコン間のスペース */
-  padding-right: 20px; /* フッターの右端との間隔 */
+  justify-content: center; /* 中央揃え */
+  gap: 20px; /* アイコン間の間隔 */
 }
 
 footer .social-links a {
   display: inline-block;
-  width: 40px;
+  width: 40px; /* アイコンサイズ */
   height: 40px;
   transition: transform 0.3s ease; /* ホバー時のアニメーション */
 }
@@ -49,9 +60,9 @@ footer .social-links a:hover {
 }
 
 footer .social-links img {
-  width: 100%; /* アイコンをボックスに合わせる */
+  width: 100%; /* アイコンをコンテナ内に収める */
   height: auto;
-  border-radius: 50%; /* 丸いアイコンにする */
+  border-radius: 50%; /* 丸いアイコンに */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
 
