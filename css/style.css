@@ -10,9 +10,12 @@ body {
 
 /* ヘッダーとナビゲーション */
 header {
-  background-color: #f8f8f8;
+  position: sticky; /* スクロールしても固定 */
+  top: 0; /* 画面の上部に固定 */
+  z-index: 1000; /* 他の要素より前面に表示 */
+  background-color: #f8f8f8; /* 背景色を指定（スクロール時の見やすさのため） */
   padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
 
 nav ul {
@@ -20,7 +23,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* メニュー項目を右揃え */
 }
 
 nav ul li {
@@ -29,13 +32,13 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333333;
+  color: #333;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #666666;
+  color: #666;
 }
 
 /* セクションの基本設定 */
