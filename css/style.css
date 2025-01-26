@@ -81,8 +81,13 @@ section p {
 .menu-time {
   font-size: 18px;
   color: #666;
-  margin: 20px 0;
+  margin: 10px auto; /* 両サイドの余白を自動調整して中央揃え */
+  padding: 0; /* 余計なパディングを削除 */
+  text-align: center; /* 中央揃えを強制 */
+  display: block; /* ブロック要素として扱い、幅を調整 */
+  max-width: 600px; /* 必要に応じて幅を制限 */
 }
+
 
 .menu-price {
   font-size: 24px;
