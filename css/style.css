@@ -240,57 +240,37 @@ section p {
 }
 
 /* About us画像セクション */
-.about-images {
-  padding: 20px;
-  text-align: center;
-}
-
-.image-gallery {
-  display: flex;
-  justify-content: center; /* 横並びで中央揃え */
-  gap: 30px; /* 画像間のスペース */
-  flex-wrap: wrap; /* 必要に応じて折り返し */
-}
-
-.image-item {
-  position: relative;
-  width: 375px; /* 横幅調整 */
-  height: auto;
-  text-align: center;
-}
-
-.image-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.image-item:hover img {
-  transform: scale(1.05);
-}
-
-/* デフォルトで非表示 */
-.image-description {
+.image-hover-content {
   position: absolute;
-  top: 100%; /* 画像の下に配置 */
-  left: 0;
-  width: 100%;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 60%;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 15px;
-  font-size: 14px;
-  line-height: 1.6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.image-item:hover .image-description {
+.image-hover-content h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.image-hover-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.image-item:hover ~ .image-hover-content {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
 }
 
 /* reservationページのスタイル */
