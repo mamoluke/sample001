@@ -333,20 +333,69 @@ section p {
   text-align: left; /* 本文を左寄せ */
 }
 
-/* reservationページのスタイル */
-.reservation-section {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Reservationセクション */
+.reservation {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.reservation-form {
-  text-align: left;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.reservation h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
+
+.reservation p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.contact-info a {
+  color: #007bff; /* リンクの色 */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #0056b3; /* ホバー時のリンク色 */
+}
+
+.reservation-policy {
+  text-align: left; /* ポリシーは左揃え */
+  margin: 0 auto;
+  max-width: 600px; /* テキスト幅を制限 */
+}
+
+.reservation-policy h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.reservation-policy ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.reservation-policy li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
 
 /* モバイル対応 */
 @media (max-width: 768px) {
