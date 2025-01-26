@@ -347,7 +347,7 @@ section p {
 /* Reservationセクション */
 .reservation {
   padding: 40px 20px;
-  text-align: center; /* 全体の中央揃え */
+  text-align: center;
 }
 
 .reservation h1 {
@@ -374,9 +374,10 @@ section p {
   text-align: left; /* 見出しを左揃え */
 }
 
-.contact-info p {
+.contact-info .contact-detail {
   font-size: 1rem;
-  margin: 10px 0; /* 各行に適切な余白 */
+  margin: 5px 0; /* 各行に適切な余白 */
+  padding-left: 20px; /* 箇条書きと見出しに合わせる */
 }
 
 .contact-info a {
