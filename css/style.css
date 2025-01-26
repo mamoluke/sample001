@@ -79,7 +79,7 @@ section p {
 .menu-time {
   font-size: 18px;
   color: #666;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .menu-price {
@@ -96,8 +96,7 @@ section p {
 }
 
 .course-detail {
-  margin: 40px 0;
-  text-align: center;
+  margin: 20px 0;
 }
 
 .course-detail h3 {
