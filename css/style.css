@@ -483,7 +483,6 @@ section p {
   .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
   }
-}
 
   section h1 {
     font-size: 1.8rem;
