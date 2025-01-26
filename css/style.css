@@ -240,20 +240,51 @@ section p {
 }
 
 /* About us画像セクション */
+.about-images {
+  padding: 20px;
+  text-align: center;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center; /* 横並びで中央揃え */
+  gap: 30px; /* 画像間のスペース */
+  flex-wrap: wrap; /* 必要に応じて折り返し */
+}
+
+.image-item {
+  position: relative;
+  width: 375px; /* 横幅を調整 */
+  height: auto;
+  text-align: center;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+  transform: scale(1.05); /* マウスオーバー時に拡大 */
+}
+
+/* マウスオーバー時のタイトルと説明を表示するためのスタイル */
 .image-hover-content {
   position: absolute;
-  bottom: 10%;
+  bottom: 10%; /* ページ全体の中央に近い位置 */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   width: 60%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8); /* 半透明の背景 */
   color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0; /* デフォルトは非表示 */
+  visibility: hidden; /* 表示を隠す */
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
@@ -268,6 +299,7 @@ section p {
   line-height: 1.6;
 }
 
+/* マウスオーバー時にタイトルと説明を表示 */
 .image-item:hover ~ .image-hover-content {
   opacity: 1;
   visibility: visible;
