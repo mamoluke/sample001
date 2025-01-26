@@ -21,8 +21,7 @@ header {
 /* フッターの基本スタイル */
 footer {
   background-color: #f8f8f8; /* 背景色 */
-  padding: 20px 0; /* 上下の余白 */
-  text-align: center; /* コンテンツを中央揃え */
+  padding: 20px; /* 上下左右の余白 */
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
   position: fixed; /* 画面の下部に固定 */
   bottom: 0; /* 画面の下端に配置 */
@@ -33,8 +32,9 @@ footer {
 /* ソーシャルリンクのスタイル */
 footer .social-links {
   display: flex;
-  justify-content: center; /* 中央揃え */
+  justify-content: flex-end; /* アイコンを右揃え */
   gap: 20px; /* アイコン間のスペース */
+  padding-right: 20px; /* フッターの右端との間隔 */
 }
 
 footer .social-links a {
