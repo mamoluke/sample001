@@ -247,46 +247,47 @@ section p {
 
 .image-gallery {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: center; /* 横並びで中央揃え */
+  gap: 30px; /* 画像間のスペース */
+  flex-wrap: wrap; /* 必要に応じて折り返し */
 }
 
 .image-item {
   position: relative;
   width: 300px;
-  height: auto;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .image-item img {
   width: 100%;
-  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
 .image-item:hover img {
-  transform: scale(1.05);
+  transform: scale(1.1); /* マウスオーバーで画像を拡大 */
 }
 
+/* ホバー時のテキスト表示エリア */
 .image-hover-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
-  padding: 15px;
-  border-radius: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* 半透明の黒背景 */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.image-item:hover .image-hover-content {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0; /* デフォルトでは非表示 */
+  transition: opacity 0.3s ease;
+  padding: 10px;
 }
 
 .image-hover-content h3 {
@@ -296,14 +297,13 @@ section p {
 }
 
 .image-hover-content p {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-/* マウスオーバー時にタイトルと説明を表示 */
-.image-item:hover ~ .image-hover-content {
+/* マウスオーバー時に表示 */
+.image-item:hover .image-hover-content {
   opacity: 1;
-  visibility: visible;
 }
 
 /* reservationページのスタイル */
