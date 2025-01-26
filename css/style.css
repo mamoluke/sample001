@@ -248,14 +248,14 @@ section p {
 .image-gallery {
   display: flex;
   justify-content: center; /* 横並びで中央揃え */
-  gap: 20px; /* 画像間のスペース */
+  gap: 30px; /* 画像間のスペース */
   flex-wrap: wrap; /* 必要に応じて折り返し */
 }
 
 .image-item {
-  position: relative;
-  width: 150px; /* 横幅を小さく調整 */
-  height: 112.5px; /* 画像のアスペクト比4:3を維持 */
+  width: 375px; /* 150pxの2.5倍 */
+  height: 281.25px; /* アスペクト比4:3を維持 */
+  text-align: center; /* 説明文の中央揃え */
 }
 
 .image-item img {
@@ -270,21 +270,10 @@ section p {
 }
 
 .image-description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  font-size: 12px; /* 文字サイズを調整 */
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.image-item:hover .image-description {
-  opacity: 1;
+  margin-top: 10px; /* 画像と説明の間にスペースを追加 */
+  font-size: 16px; /* フォントサイズを大きく調整 */
+  color: #333; /* 説明文の色を濃く調整 */
+  font-weight: bold; /* 文字を強調 */
 }
 
 /* reservationページのスタイル */
